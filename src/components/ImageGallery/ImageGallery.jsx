@@ -45,10 +45,11 @@ export default class ImageGallery extends Component {
                 );
               }
               if(this.state.page > 1){
-                return this.setState({
+                return (
+                this.setState({
                   images:[...this.state.images,...images.hits],
                   status: 'resolved'
-                }),this.downScroll()
+                }),this.downScroll())
               }
               else {
                   return this.setState({
