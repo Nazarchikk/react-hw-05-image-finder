@@ -1,0 +1,12 @@
+.liImg{
+    list-style: none;
+    margin: 10px;
+}
+.img{
+    width: 400px;
+    height: 400px;
+}
+.img:hover {
+    transform: scale(1.03);
+    cursor: zoom-in;
+}
