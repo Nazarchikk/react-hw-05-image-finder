@@ -48,7 +48,7 @@ export default class ImageGallery extends Component {
                 return this.setState({
                   images:[...this.state.images,...images.hits],
                   status: 'resolved'
-                })
+                }),this.downScroll()
               }
               else {
                   return this.setState({
