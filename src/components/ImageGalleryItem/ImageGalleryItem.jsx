@@ -4,10 +4,10 @@ import Modal from "../Modal/Modal";
 
 export default class ImageGalleryItem extends Component {
     state = {
-        showModal: false
+        showModal: false,
     }
-    toggleModal = () => {
-        this.setState(({showModal}) => ({ showModal: !showModal }));
+    modal = () => {
+        this.setState(({ showModal }) => ({ showModal: !showModal }));
       };
     render(){
         const {imagesLink,imagesBigLink,imageTag} = this.props
@@ -17,7 +17,8 @@ export default class ImageGalleryItem extends Component {
                 <li className={css.liImg}>
                     <img className={css.img} src={imagesLink} alt={imageTag} />
                 </li>
-                {showModal && <Modal imgBigSrc={imagesBigLink} imgTag={imageTag} onClose={this.toggleModal}></Modal>}
+
+                {showModal && <Modal imgBigSrc={imagesBigLink} imgTag={imageTag} close={() => (this.modal)}/>}
             </>
         )
     }
