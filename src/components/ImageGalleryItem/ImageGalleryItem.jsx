@@ -6,19 +6,18 @@ export default class ImageGalleryItem extends Component {
     state = {
         showModal: false,
     }
-    modal = () => {
+    fff = () => {
         this.setState(({ showModal }) => ({ showModal: !showModal }));
+        console.log('this.state :>> ', this.state);
       };
     render(){
-        const {imagesLink,imagesBigLink,imageTag} = this.props
         const { showModal } = this.state
         return(
             <>
-                <li className={css.liImg}>
-                    <img className={css.img} src={imagesLink} alt={imageTag} />
+                <li className={css.liImg} onClick={this.fff}>
+                    <img className={css.img} src={this.props.imagesLink} alt={this.props.imageTag} />
                 </li>
-
-                {showModal && <Modal imgBigSrc={imagesBigLink} imgTag={imageTag} close={() => (this.modal)}/>}
+                {showModal && <Modal imgBigSrc={this.props.imagesBigLink} imgTag={this.props.imageTag} onClose={this.fff}/>}
             </>
         )
     }
