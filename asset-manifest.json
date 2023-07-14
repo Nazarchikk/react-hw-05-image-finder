@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Nazarchikk/react-hw-05-image-finder.git/static/css/main.8c6ca7cd.css",
-    "main.js": "/Nazarchikk/react-hw-05-image-finder.git/static/js/main.db544ddd.js",
-    "index.html": "/Nazarchikk/react-hw-05-image-finder.git/index.html",
-    "main.8c6ca7cd.css.map": "/Nazarchikk/react-hw-05-image-finder.git/static/css/main.8c6ca7cd.css.map",
-    "main.db544ddd.js.map": "/Nazarchikk/react-hw-05-image-finder.git/static/js/main.db544ddd.js.map"
+    "main.css": "/react-hw-05-image-finder/static/css/main.8c6ca7cd.css",
+    "main.js": "/react-hw-05-image-finder/static/js/main.ca246991.js",
+    "index.html": "/react-hw-05-image-finder/index.html",
+    "main.8c6ca7cd.css.map": "/react-hw-05-image-finder/static/css/main.8c6ca7cd.css.map",
+    "main.ca246991.js.map": "/react-hw-05-image-finder/static/js/main.ca246991.js.map"
   },
   "entrypoints": [
     "static/css/main.8c6ca7cd.css",
-    "static/js/main.db544ddd.js"
+    "static/js/main.ca246991.js"
   ]
 }
